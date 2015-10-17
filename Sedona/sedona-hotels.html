@@ -1,0 +1,160 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Sedona-Hotels</title>
+  </head>
+  <body>
+    <header class="main-header conteiner">
+	   <nav class="main-nav">
+		  <li class="left"><a href="#">Информация</a></li>
+		  <li class="left"><a href="#">Фото и видео</a></li>
+		  <li class="right"><a href="#">Карта штата</a></li>
+		  <li class="right"><a href="#">Гостиницы</a></li>
+	   </nav>
+	</header>
+	<main class="conteiner">
+	  
+		   <div class="main-image">
+	   <img src="http://placehold.it/500x200" width="500" height="100" title="" alt="">
+	       </div>
+		   <div class="options clearfix">
+		     <div class="options-extra">
+			    <form action="/echo" method="post">
+				  <label>
+				   <input type="checkbox" name="pool" checked>Бассейн
+				  </label><br>
+				  <label>
+				   <input type="checkbox" name="park">Парковка
+				  </label><br>
+				  <label>
+				   <input type="checkbox" name="wifi">Wi-fi
+				  </label>
+				</form>
+		     </div>
+			 <div class="options-type">
+				<form action="/echo" method="post">
+				  <label>
+				   <input type="checkbox" name="hotel" checked>Гостиница
+				  </label><br>
+				  <label>
+				   <input type="checkbox" name="motel" checked>Мотель
+				  </label><br>
+				  <label>
+				   <input type="checkbox" name="apartment" checked>Апартаменты
+				  </label>
+				</form>
+			 </div>
+			 <div class="filter">
+			  <p>Стоимость в сутки(p)</p>
+			  <form action="/echo" method="post">
+			    <input type="text" name="from" value="От 0">
+				<input type="text" name="before" value="До 3000"><br>
+				<input type="range" min="0" max="3000"><br>
+				<input type="submit" name="showresult" value="Показать">
+			  </form>
+			  <!--
+			  <div class="range">
+			    <div class="from">
+				  От 0
+				</div>
+				<div class="befor">
+				  До 3000
+				</div>
+			  </div>
+			  <div class="scale">
+			    <div class="bar">  
+				</div>
+			  </div>
+			  <div class="toggle min-toggle"></div>
+			  <div class="toggle max-toggle"></div> 
+			  <a href="#">Показать</a>-->
+			</div>
+			 </div>
+			 <div class="find">
+			   <p>Найдено:</p><span>3</span>
+		
+			   <p class="sort">Сортировка:</p>
+			    <ul>
+				  <li class="active"><a href="#">По цене</a></li>
+				  <li><a href="#">По типу</a></li>
+				  <li ><a href="#">По рейтингу</a></li>
+				</ul>
+				<div class="icon-triangle">
+				  <div class="icon-triangle-up"></div>
+				  <div class="icon-triangle-down"></div>
+				</div>
+			 </div>
+		    <article class="selection">
+			    <div class="image">
+				 <img src="http://placehold.it/500x200" width="80" height="50" title="" alt="">
+				</div>
+				<div class="title">
+				  Amara Resort&amp;SPA
+				</div>
+				<p class="type">Гостиница <span>от 3500р.</span></p>
+			    <a class="extra" href="#">Подробнее</a> 
+				<a class="book" href="#">Забронировать</a>
+				<div class="rating">
+				  <div class="icon-star nbr4"></div>
+				  <div class="rating-value">
+				  Рейтинг:8,5
+				  </div>
+				</div>
+			</article>
+			
+			 <article class="selection">
+			    <div class="image">
+				 <img src="http://placehold.it/500x200" width="80" height="50" title="" alt="">
+				</div>
+				<div class="title">
+				  Desert Quail Inn
+				</div>
+				<p class="type">Мотель <span>от 2000р.</span></p>
+			    <a class="extra" href="#">Подробнее</a> 
+				<a class="book" href="#">Забронировать</a>
+				<div class="rating">
+				  <div class="icon-star nbr2"></div>
+				  <div class="rating-value">
+				  Рейтинг:8,9
+				  </div>
+				</div>
+			</article>
+			
+			<article class="selection">
+			    <div class="image">
+				 <img src="http://placehold.it/500x200" width="80" height="50" title="" alt="">
+				</div>
+				<div class="title">
+				  Villas at Poco Diablo
+				</div>
+				<p class="type">Апартаменты <span>от 4000р.</span></p>
+			    <a class="extra" href="#">Подробнее</a> 
+				<a class="book" href="#">Забронировать</a>
+				<div class="rating">
+				  <div class="icon-star nbr2"></div>
+				  <div class="rating-value">
+				  Рейтинг:9,2
+				  </div>
+				</div>
+			</article>
+	</main>
+    <footer class="main-footer clearfix">
+	    <div class="conteiner">
+		<div class="footer-contacts">
+          <a href="#">#Visitsedona</a><br>
+        </div>
+        <div class="footer-social">
+          <a href="#" class="social-btn social-btn-tw">Твитер</a>
+          <a href="#" class="social-btn social-btn-fb">Фейсбук</a>
+          <a href="#" class="social-btn social-btn-youtube">Ютюб</a>
+        </div>
+        <div class="footer-copyright">
+          <p>website By</p>
+          <p>html<br>
+		  academy.ru</p>
+        </div>
+		</div>
+	</footer>
+  </body>
+</html>
