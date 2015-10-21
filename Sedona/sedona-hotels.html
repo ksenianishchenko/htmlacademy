@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>Sedona-Hotels</title>
+	<link type="text/css" href="style.css" rel="stylesheet">
   </head>
   <body>
     <header class="main-header conteiner">
@@ -22,53 +23,46 @@
 		     <div class="options-extra">
 			    <form action="/echo" method="post">
 				  <label>
-				   <input type="checkbox" name="pool" checked>Бассейн
+				   <input type="checkbox" name="pool" checked><i class="check-on"></i>Бассейн
 				  </label><br>
 				  <label>
-				   <input type="checkbox" name="park">Парковка
+				   <input type="checkbox" name="park"><i class="check-off"></i>Парковка
 				  </label><br>
 				  <label>
-				   <input type="checkbox" name="wifi">Wi-fi
+				   <input type="checkbox" name="wifi"> <i class="check-off"></i>Wi-fi
 				  </label>
 				</form>
 		     </div>
 			 <div class="options-type">
 				<form action="/echo" method="post">
 				  <label>
-				   <input type="checkbox" name="hotel" checked>Гостиница
+				   <input type="checkbox" name="hotel" checked><i class="check-on"></i>Гостиница
 				  </label><br>
 				  <label>
-				   <input type="checkbox" name="motel" checked>Мотель
+				   <input type="checkbox" name="motel" checked><i class="check-on"></i>Мотель
 				  </label><br>
 				  <label>
-				   <input type="checkbox" name="apartment" checked>Апартаменты
+				   <input type="checkbox" name="apartment" checked><i class="check-on"></i>Апартаменты
 				  </label>
 				</form>
 			 </div>
 			 <div class="filter">
 			  <p>Стоимость в сутки(p)</p>
 			  <form action="/echo" method="post">
-			    <input type="text" name="from" value="От 0">
-				<input type="text" name="before" value="До 3000"><br>
-				<input type="range" min="0" max="3000"><br>
-				<input type="submit" name="showresult" value="Показать">
-			  </form>
-			  <!--
-			  <div class="range">
 			    <div class="from">
-				  От 0
+			    <span>От</span><input type="namber" name="price" value="0">
 				</div>
-				<div class="befor">
-				  До 3000
+				<div class="before">
+				<span>До</span><input type="namber" name="price" value="3000"><br>
 				</div>
-			  </div>
 			  <div class="scale">
 			    <div class="bar">  
 				</div>
 			  </div>
 			  <div class="toggle min-toggle"></div>
 			  <div class="toggle max-toggle"></div> 
-			  <a href="#">Показать</a>-->
+				<input type="submit" name="showresult" value="Показать">
+			  </form>
 			</div>
 			 </div>
 			 <div class="find">
@@ -81,13 +75,13 @@
 				  <li ><a href="#">По рейтингу</a></li>
 				</ul>
 				<div class="icon-triangle">
-				  <div class="icon-triangle-up"></div>
-				  <div class="icon-triangle-down"></div>
+				  <i class="icon-up-dir"></i>
+				  <i class="icon-down-dir"></i>
 				</div>
 			 </div>
 		    <article class="selection">
 			    <div class="image">
-				 <img src="http://placehold.it/500x200" width="80" height="50" title="" alt="">
+				 <img src="images/amara.jpg" width="135" height="90" title="AMARA RESORT&SPA" alt="Изображение отеля AMARA RESORT&SPA">
 				</div>
 				<div class="title">
 				  Amara Resort&amp;SPA
@@ -96,7 +90,12 @@
 			    <a class="extra" href="#">Подробнее</a> 
 				<a class="book" href="#">Забронировать</a>
 				<div class="rating">
-				  <div class="icon-star nbr4"></div>
+				  <div class="icon-star-value">
+				    <i class="icon-star"></i>
+					<i class="icon-star"></i>
+					<i class="icon-star"></i>
+					<i class="icon-star"></i>
+				  </div>
 				  <div class="rating-value">
 				  Рейтинг:8,5
 				  </div>
@@ -105,7 +104,7 @@
 			
 			 <article class="selection">
 			    <div class="image">
-				 <img src="http://placehold.it/500x200" width="80" height="50" title="" alt="">
+				 <img src="images/desert.jpg" width="135" height="90" title="DESERT QUAIL INN" alt="Изображение отеля DESERT QUAIL INN">
 				</div>
 				<div class="title">
 				  Desert Quail Inn
@@ -114,7 +113,10 @@
 			    <a class="extra" href="#">Подробнее</a> 
 				<a class="book" href="#">Забронировать</a>
 				<div class="rating">
-				  <div class="icon-star nbr2"></div>
+				  <div class="icon-star-value">
+				    <i class="icon-star"></i>
+					<i class="icon-star"></i>
+				  </div>
 				  <div class="rating-value">
 				  Рейтинг:8,9
 				  </div>
@@ -123,7 +125,7 @@
 			
 			<article class="selection">
 			    <div class="image">
-				 <img src="http://placehold.it/500x200" width="80" height="50" title="" alt="">
+				 <img src="images/villas.jpg" width="135" height="90" title="VILLAS AT POCO DIABLO" alt="Изображение отеля VILLAS AT POCO DIABLO">
 				</div>
 				<div class="title">
 				  Villas at Poco Diablo
@@ -132,7 +134,11 @@
 			    <a class="extra" href="#">Подробнее</a> 
 				<a class="book" href="#">Забронировать</a>
 				<div class="rating">
-				  <div class="icon-star nbr2"></div>
+				  <div class="icon-star-value">
+				    <i class="icon-star"></i>
+					<i class="icon-star"></i>
+					<i class="icon-star"></i>
+				  </div>
 				  <div class="rating-value">
 				  Рейтинг: 9,2
 				  </div>
@@ -145,14 +151,14 @@
           <a href="#">#Visitsedona</a><br>
         </div>
         <div class="footer-social">
-          <a href="#" class="social-btn social-btn-tw">Твитер</a>
-          <a href="#" class="social-btn social-btn-fb">Фейсбук</a>
-          <a href="#" class="social-btn social-btn-youtube">Ютюб</a>
+          <a href="#" class="social-icon icon-twitter">Твитер</a>
+          <a href="#" class="social-icon icon-facebook">Фейсбук</a>
+          <a href="#" class="social-icon icon-youtube">Ютюб</a>
         </div>
+		
         <div class="footer-copyright">
           <p>website By</p>
-          <p>html<br>
-		  academy.ru</p>
+          <img src="images/logo_htmlacademy.png" width="113" height="39" title="html academy.ru" alt="html academy.ru">
         </div>
 		</div>
 	</footer>
