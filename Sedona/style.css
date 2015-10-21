@@ -1,0 +1,30 @@
+﻿body {
+    font-family: Geneva, Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	text-transform: uppercase;
+	margin: 0px;
+	padding: 0px;
+	background-color: f2f2f2;
+	color: black;
+	line-height: 21px;
+	font-weight: regular;
+}
+header nav, p.top {
+    font-weight: bold;
+    line-height: 26px;	
+} 
+p.top { 
+    font-size: 21px;
+}
+div.reason-title, div.inform-title {
+    font-weight: bold;
+	font-size: 21px;
+}
+div.location {
+    line-height: 24px;
+}
+p.notice {
+    font-size: 30px;
+	font-weight: bold;
+}
+
