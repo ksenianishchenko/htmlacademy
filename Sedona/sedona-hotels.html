@@ -20,8 +20,8 @@
 	   <img src="http://placehold.it/500x200" width="500" height="100" title="" alt="">
 	       </div>
 		   <div class="options clearfix">
+		     <form action="/echo" method="post">
 		     <div class="options-extra">
-			    <form action="/echo" method="post">
 				  <label>
 				   <input type="checkbox" name="pool" checked><i class="check-on"></i>Бассейн
 				  </label><br>
@@ -31,10 +31,8 @@
 				  <label>
 				   <input type="checkbox" name="wifi"> <i class="check-off"></i>Wi-fi
 				  </label>
-				</form>
 		     </div>
 			 <div class="options-type">
-				<form action="/echo" method="post">
 				  <label>
 				   <input type="checkbox" name="hotel" checked><i class="check-on"></i>Гостиница
 				  </label><br>
@@ -44,11 +42,9 @@
 				  <label>
 				   <input type="checkbox" name="apartment" checked><i class="check-on"></i>Апартаменты
 				  </label>
-				</form>
 			 </div>
 			 <div class="filter">
 			  <p>Стоимость в сутки(p)</p>
-			  <form action="/echo" method="post">
 			    <div class="from">
 			    <span>От</span><input type="namber" name="price" value="0">
 				</div>
@@ -62,8 +58,8 @@
 			  <div class="toggle min-toggle"></div>
 			  <div class="toggle max-toggle"></div> 
 				<input type="submit" name="showresult" value="Показать">
-			  </form>
 			</div>
+			</form>
 			 </div>
 			 <div class="find">
 			   <p>Найдено:</p><span>3</span>
