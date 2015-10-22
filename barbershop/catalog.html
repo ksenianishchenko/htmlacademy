@@ -37,10 +37,10 @@
 		</nav>
 		<div class="catalog clearfix">
 		  <div class="column-left">
-		    <section class="produce">
+		    <form action="https://echo.htmlacademy.ru" method="post">
+		    <div class="produce">
 			  <h2 class="column-left-title">Производители:</h2>
-			  <form class="produce-list" action="https://echo.htmlacademy.ru" method="post">
-			    <div class="produce-company">
+			  	<div class="produce-company">
 				<input type="checkbox" id="Baxter" checked><label for="Baxter">Baxter of California</label>
 				</div>
 				<div class="produce-company">
@@ -58,12 +58,10 @@
 				<div class="produce-company">
 				<input type="checkbox" id="Americancrew" checked><label for="Americancrew">American Crew</label>
 				</div>
-			  </form>
-			</section>
+			</div>
 			
-			<section class="group-items">
-			  <h2 class="column-left-title">Группы товаров:</h2>
-			  <form class="group-items-list" action="https://echo.htmlacademy.ru" method="post">
+			<div class="group-items">
+			    <h2 class="column-left-title">Группы товаров:</h2>
 			    <div class="filter-item">
 				<input type="radio" name="itemtype" id="shaving" checked><label for="shaving">Бритвенные принадлежности</label>
 				</div>
@@ -73,9 +71,9 @@
 				<div class="filter-item">
 				<input type="radio" name="itemtype" id="accessories"><label for="accessories">Аксессуары</label>
 				</div>
-			  </form>
-			  <a class="show" href="#">Показать</a>
-			</section>
+			    <input type="submit" name="result" value="Показать">
+			</div>
+			</form>
 		  </div>
 		  
 		  <div class="column-right">
@@ -83,9 +81,11 @@
 			  <div class="item-image">
 			    <a href="#"><img src="images/Набор-для-путешествий.jpg" width="220" height="165" title="Baxter of California" alt="Набор для путешествий Baxter of California"></a>
 			  </div>
-			  <a class="item-name" href="#">Набор для путешествий<br>
+			  <div class="item-name">
+			  <a href="#">Набор для путешествий<br>
 			           <span>&quot;Baxter of California&quot;</span>
 			  </a>
+			  </div>
 			  <div class="item-price-buy clearfix">
 			    <p>2 900 руб.</p>
 			    <a class="button" href="#">Купить</a>
@@ -96,9 +96,11 @@
 			  <div class="item-image">
 			    <a href="#"><img src="images/увлаж_конд.jpg" width="220" height="165" title="Baxter of California" alt="Увлажняющий кондиционер Baxter of California"></a> 
 			  </div>
-			  <a class="item-name" href="#">Увлажняющий кондиционер<br>
+			  <div class="item-name">
+			  <a href="#">Увлажняющий кондиционер<br>
 			           <span>&quot;Baxter of California&quot;</span>
 			  </a>
+			  </div>
 			  <div class="item-price-buy clearfix">
 			    <p>750 руб.</p>
 			    <a class="button" href="#">Купить</a>
@@ -109,9 +111,11 @@
 			  <div class="item-image">
 			    <a href="#"><img src="images/гель-для-волос.jpg" width="220" height="165" title="Suavecito" alt="Гель для волос"></a> 
 			  </div>
-			  <a class="item-name" href="#">Гель для волос<br>
+			  <div class="item-name">
+			  <a href="#">Гель для волос<br>
 			           <span>&quot;Suavecito&quot;</span>
 			  </a>
+			  </div>
 			  <div class="item-price-buy clearfix">
 			    <p>290 руб.</p>
 			    <a class="button" href="#">Купить</a>
@@ -122,9 +126,11 @@
 			  <div class="item-image">
 			    <a href="#"><img src="images/гель-для-укладки-волос.jpg" width="220" height="165" title="American Crew" alt="Глина для укладки волос"></a> 
 			  </div>
-			  <a class="item-name" href="#">Гель для укладки волос<br>
+			  <div class="item-name">
+			  <a href="#">Гель для укладки волос<br>
 			           <span>&quot;American Crew&quot;</span>
 			  </a>
+			  </div>
 			  <div class="item-price-buy clearfix">
 			    <p>500 руб.</p>
 			    <a class="button" href="#">Купить</a>
@@ -135,9 +141,11 @@
 			  <div class="item-image">
 			    <a href="#"><img src="images/гель-для-волос-American.jpg" width="220" height="165" title="American Crew" alt="Гель для волос"></a> 
 			  </div>
-			  <a class="item-name" href="#">Гель для волос<br>
+			  <div class="item-name">
+			  <a href="#">Гель для волос<br>
 			           <span>&quot;American Crew&quot;</span>
 			  </a>
+			  </div>
 			  <div class="item-price-buy clearfix">
 			    <p>300 руб.</p>
 			    <a class="button" href="#">Купить</a>
@@ -148,9 +156,11 @@
 			  <div class="item-image">
 			    <a href="#"><img src="images/Гель-для-бритья.jpg" width="220" height="165" title="American Crew" alt="Набор для бритья"></a> 
 			  </div>
-			  <a class="item-name" href="#">Набор для бритья<br>
+			  <div class="item-name">
+			  <a href="#">Набор для бритья<br>
 			           <span>&quot;Baxter of California&quot;</span>
 			  </a>
+			  </div>
 			  <div class="item-price-buy clearfix">
 			    <p>3900 руб.</p>
 			    <a class="button" href="#">Купить</a>
