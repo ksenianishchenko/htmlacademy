@@ -6,21 +6,23 @@
 	<link type="text/css" href="style.css" rel="stylesheet">
   </head>
   <body>
+  <div class="conteiner">
     <header class="main-header conteiner">
-	   <nav class="main-nav">
+	   <nav class="main-nav clearfix">
 		  <li class="left"><a href="#">Информация</a></li>
 		  <li class="left"><a href="#">Фото и видео</a></li>
 		  <li class="right"><a href="#">Карта штата</a></li>
 		  <li class="right"><a href="#">Гостиницы</a></li>
 	   </nav>
 	</header>
-	<main class="conteiner">
+	<main>
 	  
 		   <div class="main-image">
 	       </div>
 		   <div class="options clearfix">
 		     <form action="/echo" method="post">
 		     <div class="options-extra">
+			      <div class="options-title">Инфраструктура:</div>
 				  <label>
 				   <input type="checkbox" name="pool" checked><i class="check-on"></i>Бассейн
 				  </label><br>
@@ -32,6 +34,7 @@
 				  </label>
 		     </div>
 			 <div class="options-type">
+			      <div class="options-title">Тип жилья:</div>
 				  <label>
 				   <input type="checkbox" name="hotel" checked><i class="check-on"></i>Гостиница
 				  </label><br>
@@ -43,7 +46,7 @@
 				  </label>
 			 </div>
 			 <div class="filter">
-			  <p>Стоимость в сутки(p)</p>
+			  <div class="options-title">Стоимость в сутки(p)</div>
 			    <div class="from">
 			    <span>От</span><input type="namber" name="price" value="0">
 				</div>
@@ -141,21 +144,20 @@
 			</article>
 	</main>
     <footer class="main-footer clearfix">
-	    <div class="conteiner">
-		<div class="footer-contacts">
+		<div class="footer-contacts clm-view">
           <a href="#">#Visitsedona</a><br>
         </div>
-        <div class="footer-social">
+        <div class="footer-social clm-view">
           <a href="#" class="social-icon icon-twitter">Твитер</a>
           <a href="#" class="social-icon icon-facebook">Фейсбук</a>
           <a href="#" class="social-icon icon-youtube">Ютюб</a>
         </div>
 		
-        <div class="footer-copyright">
+        <div class="footer-copyright clm-view">
           <p>website By</p>
           <img src="images/logo_htmlacademy.png" width="113" height="39" title="html academy.ru" alt="html academy.ru">
         </div>
-		</div>
 	</footer>
+  </div>
   </body>
 </html>
