@@ -4,19 +4,27 @@
 	text-transform: uppercase;
 	margin: 0px;
 	padding: 0px;
-	background-color: f2f2f2;
+	background-color: #f2f2f2;
 	color: black;
 	line-height: 21px;
 	font-weight: regular;
 }
-header nav, p.top {
-    font-weight: bold;
-    line-height: 26px;	
-} 
-p.top { 
-    font-size: 21px;
+.conteiner {
+    width: 1200px;
+	margin: 0 auto;
+	background-color: #ffffff;
 }
-div.reason-title, div.inform-title {
+.clearfix:after {
+    content: "";
+	display: table;
+	clear: both;
+}
+header {
+    font-weight: bold;
+    line-height: 26px; 	
+} 
+
+div.reason-title, div.inform-title, p.top {
     font-weight: bold;
 	font-size: 21px;
 }
@@ -27,4 +35,108 @@ p.notice {
     font-size: 30px;
 	font-weight: bold;
 }
+.options-title {
+    font-size: 16px;
+	font-weight: bold;
+}
+a {
+    text-decoration: none;
+	color: #000000;
+}
+li {
+    list-style: none;
+}
+/*Хидер*/
+nav.main-nav, .main-footer {
+     padding: 20px 6%;
+	 border:1px solid black;
+}
+.main-nav li {
+     width: 20%;
+}
+.main-nav li.left {
+     float: left;
+}
+.main-nav li.right {
+     float: right;
+}
+/*Конец Хидер*/
 
+/*Логотип*/
+.main-image div.welcome {
+     width: 460px;
+     min-height: 360px;
+     margin: 0 auto;
+     margin-top: 70px;	 
+}
+/*Конец Логотип*/
+
+/*Контент Главная*/
+p.top, p.small, p.notice {
+     width: 540px;
+	 min-height: 50px;
+	 text-align: center;
+     margin: 0 auto;
+}
+
+.col4{
+      width: 33%;
+	  text-align: center;
+}
+.col8 {
+      width: 66%;
+	  text-align: center;
+}
+.col4, .col8 {
+     display: inline-block;
+	 vertical-align: top;
+}
+div.form-search {
+     width: 590px;
+     margin: 0 auto;
+}
+
+/*Конец Контент Главная*/
+
+/*Контент Отель*/
+.options {
+     border: 1px solid black;
+}
+.options-extra, .options-type {
+	 float: left;
+	 width: 20%;
+}
+.filter {
+     float: right;
+	 width: 40%;
+}
+.find ul, .find  p, .find li {
+     display: inline-block;
+}
+
+/*Конец Контент Отель*/
+/*Футер*/
+.clm-view {
+     width: 33%;
+	 text-align: center;
+	 border: 1px solid black;
+}
+.footer-contacts {
+      float: left;
+	  font-size: 21px;
+	  font-weight: bold;
+}
+.footer-social {
+      float: left;
+}
+.footer-copyright {
+      float: right;
+	  font-size: 0;
+}
+.footer-copyright p {
+      font-size: 14px;
+}
+.footer-copyright p, .footer-copyright img { 
+      display: inline-block;
+} 
+/*Конец Футер*/
