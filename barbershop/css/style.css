@@ -1,0 +1,251 @@
+﻿body {
+    font-family: PTSans, Geneva, Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	line-height: 24px;
+	text-transform: uppercase;
+	color: black;
+	font-weight: bolder;
+	margin: 0px;
+	padding: 0px;
+	min-width: 800px;
+	background: url("../images/bgd_content.png") repeat 50% 50%;
+}
+@font-face {
+    font-family: PTSans;
+	src: url(../PTSans/PTN57F.ttf);
+}
+h1 {
+    font-size: 30px; 
+}
+h2 {
+    font-size: 24px;
+}
+a   {
+    text-decoration: none; 
+	color: #000000;
+}
+li { 
+    list-style: none;
+}
+
+.clearfix:after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+.container {
+  width: 930px;
+  padding: 0 5px;
+  margin: 0 auto;
+}
+/*Хидер*/
+.main-header {
+  padding: 20px 20px;
+  background-color: #000000; 
+  margin-bottom: 40px;
+}
+.main-nav {
+  float: left;
+  width: 750px;
+  min-height: 20px;
+  font-size: 0;
+}
+
+.enter {
+  float: right;
+  width: 60px;
+  min-height: 20px;
+  font-size: 16px;
+  text-decoration: none;
+}
+.main-nav li {
+  display: inline-block;
+  vertical-align: center;
+  margin-right: 40px;
+  font-size: 16px;
+}
+.main-header a {
+  color: #ffffff;
+}
+/*Конец Хидер*/
+
+/*Контент Каталог*/
+ul {
+  padding: 0;
+  margin: 0;
+}
+.breadcrumbs {
+  font-size: 0;
+  margin-bottom: 40px;
+}
+.breadcrumbs li{
+   display: inline-block;
+   vertical-align: center;
+   font-size: 14px;
+   margin-right: 40px;
+}
+.breadcrumbs .active {
+   color: #aba9a7;
+}
+.column-left {
+   float: left;
+   width: 220px;
+   margin-right: 10px;
+}
+.column-right {
+   width: 690px;
+   float: right;
+   margin-left: 10px;
+}
+.item {
+   width: 220px;
+   height: 300px;
+   float: left;
+   margin-right: 15px;
+   margin-bottom: 15px;   
+   background-color: #ffffff;
+}
+.item:nth-child(3n) {
+   margin-right: 0;
+}
+.item-name {
+   line-height: 18px;
+   margin: 10px;
+}
+.item-name span {
+  text-transform: none;
+}
+.item-price-buy p, .item-price-buy a {
+  float: left; 
+}
+.item-price-buy {
+  margin: 10px;
+}
+.item-price-buy p {
+  float: left; 
+  width: 60px;
+  background-color: #e5e5e5;
+  padding: 10px 25px;
+}
+.item-price-buy a {
+  float: left; 
+  width: 50px;
+  background-color: #000000;
+  color: #ffffff;
+  padding: 10px 15px;
+}
+.column-left-title {
+  margin-top: 0px;
+}
+.produce-company, .filter-item {
+  margin-bottom: 15px;
+}
+
+.produce-company:last-child {
+   margin-bottom: 40px;
+}
+input[type="submit"] {
+   width: 110px;
+   height: 40px;
+   background-color: #000000; 
+   border: 1px solid #000000;
+   color: #ffffff;
+   text-transform: uppercase;
+   font-family: PTSans;
+}
+.pagination {
+   clear: both;
+}
+.pagination ul {
+   font-size: 0;
+}
+.pagination li {
+   width: 43px;
+   height: 43px;
+   display: inline-block;
+   margin-top: 40px;
+   margin-right: 7px; 
+   font-size: 14px;
+}
+.pagination a {
+   background-color: #000000;
+   color: #ffffff;
+   padding: 10px 15px;
+ }
+ .pagination .active {
+   background-color: transparent;
+   color: #000000;
+ }
+/*Конец Контент Каталог*/
+
+/*Контент Товар каталога*/
+
+.column-left-item {
+   width: 460px;
+   float: left;
+   margin-right: 70px;
+   margin-top: 20px;
+   
+}
+.column-right-item {
+   width: 380px;
+   float: right;
+   margin-left: 10px;
+   margin-top: 20px;
+}
+
+.small-image li {
+   width: 140px;
+   height: 145px;
+   margin-right: 20px;
+   margin-top: 20px;
+   float: left;
+}
+.small-image li:nth-child(3n) {
+   margin-right: 0;
+}
+.main-image, .small-image li, .item {
+   box-shadow: 0 0 10px #e4e1de;
+   box-shadow: 0 0 10px 0 #e4e1de;
+}
+.availability {
+  
+}
+.availability p {
+  float: left;
+}
+.articule {
+  margin-left: 170px; 
+  color: #c3c2c1;
+}
+.information  .item-price-buy {
+  margin-left: 0;
+}
+/*Конец Контент Товар каталога*/
+/*Футер*/
+.main-footer {
+  padding: 20px 0;
+}
+
+.footer-contacts {
+  float: left;
+
+  width: 310px;
+  margin-right: 90px;
+  min-height: 80px;
+}
+
+.footer-social {
+  float: left;
+  width: 140px;
+  min-height: 80px;
+}
+
+.footer-copyright {
+  float: right;
+  width: 140px;
+  min-height: 80px;
+}
+
+/*Конец Футер*/
