@@ -1,31 +1,38 @@
 ﻿body {
-    font-family: PTSans, Geneva, Arial, Helvetica, sans-serif;
+  font-family: 'PT Sans Narrow', Arial, Helvetica, sans-serif;
 	font-size: 14px;
 	line-height: 24px;
 	text-transform: uppercase;
 	color: black;
 	font-weight: bolder;
-	margin: 0px;
-	padding: 0px;
-	min-width: 800px;
+/*	margin: 0px;
+	padding: 0px;*/
+	/*min-width: 800px;*/
 	background: url("../images/bgd_content.png") repeat 50% 50%;
 }
-@font-face {
-    font-family: PTSans;
-	src: url(../PTSans/PTN57F.ttf);
-}
+
 h1 {
     font-size: 30px; 
 }
+
 h2 {
     font-size: 24px;
 }
-a   {
+
+a {
     text-decoration: none; 
 	color: #000000;
 }
 li { 
     list-style: none;
+}
+
+p {
+  margin: 0;
+}
+
+img {
+  vertical-align: middle;
 }
 
 .clearfix:after {
@@ -184,15 +191,15 @@ input[type="submit"] {
 .column-left-item {
    width: 460px;
    float: left;
-   margin-right: 70px;
-   margin-top: 20px;
+   margin-right: 90px;
+/*   margin-top: 20px;*/
    
 }
 .column-right-item {
    width: 380px;
-   float: right;
-   margin-left: 10px;
-   margin-top: 20px;
+   float: left; 
+/*   margin-left: 10px;
+   margin-top: 20px;*/
 }
 
 .small-image li {

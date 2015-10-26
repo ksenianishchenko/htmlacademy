@@ -73,9 +73,24 @@ li {
      max-width: 1200px;
      min-width: 798px;	 
      background: url(../images/bgr_image.jpg) no-repeat 50% 30%;
-	 text-align: center;
+	   text-align: center;
+     -webkit-background-size: cover;
+     background-size: cover;
      padding-top: 75px;
-     padding-bottom: 90px;	 
+     padding-bottom: 90px;
+     position: relative;
+}
+
+.main-image:before {
+  content: '';
+  background: url(../images/under_bgr_image.png) no-repeat;
+  background-size: 100% 100%;
+  height: 50px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  margin: auto;
 }
 /*Конец Логотип*/
 
