@@ -1,13 +1,10 @@
 ﻿body {
-  font-family: 'PT Sans Narrow', Arial, Helvetica, sans-serif;
+    font-family: 'PT Sans Narrow', Arial, Helvetica, sans-serif;
 	font-size: 14px;
 	line-height: 24px;
 	text-transform: uppercase;
 	color: black;
-	font-weight: bolder;
-/*	margin: 0px;
-	padding: 0px;*/
-	/*min-width: 800px;*/
+	font-weight: 700;
 	background: url("../images/bgd_content.png") repeat 50% 50%;
 }
 
@@ -28,11 +25,15 @@ li {
 }
 
 p {
-  margin: 0;
+    margin: 0;
 }
 
 img {
   vertical-align: middle;
+}
+main.container {
+  padding-top: 40px;
+  padding-bottom: 40px;
 }
 
 .clearfix:after {
@@ -50,7 +51,6 @@ img {
 .main-header {
   padding: 20px 20px;
   background-color: #000000; 
-  margin-bottom: 40px;
 }
 .main-nav {
   float: left;
@@ -71,6 +71,19 @@ img {
   vertical-align: center;
   margin-right: 40px;
   font-size: 16px;
+}
+.push {
+  position: relative;
+}
+.push:before {
+  content: '';
+  background-color: #ffffff;
+  position: absolute;
+  width: 56px;
+  height: 4px;
+  right: 0;
+  left: 0;
+  bottom: -26px;
 }
 .main-header a {
   color: #ffffff;
@@ -107,7 +120,6 @@ ul {
 }
 .item {
    width: 220px;
-   height: 300px;
    float: left;
    margin-right: 15px;
    margin-bottom: 15px;   
@@ -118,7 +130,7 @@ ul {
 }
 .item-name {
    line-height: 18px;
-   margin: 10px;
+   margin: 15px;
 }
 .item-name span {
   text-transform: none;
@@ -127,13 +139,14 @@ ul {
   float: left; 
 }
 .item-price-buy {
-  margin: 10px;
+  margin: 15px;
 }
 .item-price-buy p {
   float: left; 
   width: 60px;
   background-color: #e5e5e5;
   padding: 10px 25px;
+  text-align: center;
 }
 .item-price-buy a {
   float: left; 
@@ -141,6 +154,7 @@ ul {
   background-color: #000000;
   color: #ffffff;
   padding: 10px 15px;
+  text-align: center;
 }
 .column-left-title {
   margin-top: 0px;
@@ -159,7 +173,8 @@ input[type="submit"] {
    border: 1px solid #000000;
    color: #ffffff;
    text-transform: uppercase;
-   font-family: PTSans;
+   font-family: 'PT Sans Narrow';
+   font-weight: bold;
 }
 .pagination {
    clear: both;
@@ -174,6 +189,7 @@ input[type="submit"] {
    margin-top: 40px;
    margin-right: 7px; 
    font-size: 14px;
+   
 }
 .pagination a {
    background-color: #000000;
@@ -183,6 +199,7 @@ input[type="submit"] {
  .pagination .active {
    background-color: transparent;
    color: #000000;
+   text-align: center;
  }
 /*Конец Контент Каталог*/
 
@@ -216,9 +233,6 @@ input[type="submit"] {
    box-shadow: 0 0 10px #e4e1de;
    box-shadow: 0 0 10px 0 #e4e1de;
 }
-.availability {
-  
-}
 .availability p {
   float: left;
 }
@@ -229,30 +243,57 @@ input[type="submit"] {
 .information  .item-price-buy {
   margin-left: 0;
 }
+.dicription {
+  margin-top: 40px;
+  margin-bottom: 40px;
+} 
+.kit-include {
+  margin-top: 60px;
+  margin-bottom: 30px;
+}
 /*Конец Контент Товар каталога*/
 /*Футер*/
 .main-footer {
-  padding: 20px 0;
+  padding-top: 60px;
+  padding-bottom: 40px;
+  background: url("../images/bgd_footer.png") repeat 50% 50%;
+  color: #ffffff;
 }
-
+.main-footer a {
+  color: #ffffff;
+}
 .footer-contacts {
   float: left;
-
   width: 310px;
   margin-right: 90px;
-  min-height: 80px;
+}
+.footer-contacts a {
+  text-decoration: underline; 
 }
 
 .footer-social {
   float: left;
   width: 140px;
-  min-height: 80px;
+  text-align: center;
 }
-
+.footer-social a {
+ background-color:#000000;
+ padding: 21px;
+ display: inline-block;
+ margin-right: 4px;
+ margin-top: 15px;
+}
+.footer-social a:last-child {
+  margin-right: 0;
+}
 .footer-copyright {
   float: right;
   width: 140px;
-  min-height: 80px;
+  text-align: center;
 }
-
+.footer-copyright .btn {
+  margin-top: 15px;
+  padding: 10px 15px;
+  background-color: #000000;  
+}
 /*Конец Футер*/
