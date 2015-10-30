@@ -239,21 +239,20 @@
     padding-left: 75px;
 	padding-right: 75px;
 }
+
+.notice-promo .notice {
+    font-size: 30px;
+	font-weight: 700;
+    margin: auto;	
+	margin-top: 55px;
+	margin-bottom: 30px;
+    text-align: center;
+}
 .notice-promo .small {
-    width: 440px;
     margin: auto;
 	margin-bottom: 50px;
 	text-align: center;
 }
-.notice {
-    font-size: 30px;
-	font-weight: 700;
-	width: 320px;
-    margin: auto;	
-	margin-top: 55px;
-	margin-bottom: 30px;
-}
-
 .form-search-hotel {
 	width: 565px;
 	background-color: #766357;
