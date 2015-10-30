@@ -57,26 +57,29 @@
 	box-shadow: 0 0 10px 0 #e2e2e2; 
 	position: relative;
 }
+
 .clearfix:after, .row:after {
-    content: "";
+  content: "";
 	display: table;
 	clear: both;
 }
 
 .reason-title,.inform-title, .sub-header, .find-result, h3 {
-    font-weight: 700;
+  font-weight: 700;
 	font-size: 21px;
 }
 
-.main-header a, .form-search-hotel a, .main-footer a, .find a, .extra, .book {
-    text-decoration: none;
+a {
+  text-decoration: none;
 	color: #000000;
 }
-.main-header li, .options-set li, .find li {
+
+li {
     list-style: none;
 }
-.main-header ul, .options-set ul, .find ul {
-    margin: 0;
+
+ul {
+  margin: 0;
 	padding: 0;
 }
 
@@ -255,20 +258,18 @@
 }
 
 .form-search-hotel {
-	width: 565px;
-	background-color: #766357;
-	text-align: center;
-	padding-top: 28px;
-	padding-bottom: 28px;
-	color: #ffffff;
-	margin: 0 auto;
-	font-weight: 700;
-	font-size: 21px;
-	line-height: 26px;
+  width: 565px;
+  background-color: #766357;
+  padding-top: 28px;
+  padding-bottom: 28px;
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 26px;
+  display: inline-block;
+  text-decoration: none;
 }
-.form-search-hotel a {
-    color: #ffffff;
-}
+
 .form-search {
     width: 455px;
     margin: 0 auto;
