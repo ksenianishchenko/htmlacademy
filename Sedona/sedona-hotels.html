@@ -12,82 +12,114 @@
 	   <nav class="main-nav clearfix">
 		  <li class="left"><a href="#0">Информация</a></li>
 		  <li class="left"><a href="#0">Фото и видео</a></li>
-		  <li class="right"><a href="#0">Гостиницы</a></li>
+		  <li >
+		    <a class="logo" href="#0">
+			  <img src="images/logo.png" width="138" height="70" title="Логотип City Sedona" alt="Логотип City Sedona">
+		    </a>
+		  </li>
 		  <li class="right"><a href="#0">Карта штата</a></li>
+		  <li class="right"><a href="sedona-hotels.html">Гостиницы</a></li>
 	   </nav>
 	</header>
 	<main> 
 		<div class="options clearfix">
 		   
-		    <form class="options-form" action="/echo" method="post">
-		       <div class="options-extra">
-			      <div class="options-title">Инфраструктура:</div>
-				  <label>
-				    <input type="checkbox" name="pool" checked><i class="check-on"></i>Бассейн
-				  </label><br>
-				  <label>
-				    <input type="checkbox" name="park"><i class="check-off"></i>Парковка
-				  </label><br>
-				  <label>
-				    <input type="checkbox" name="wifi"> <i class="check-off"></i>Wi-fi
-				  </label>
-		      </div>
-			  <div class="options-type">
-			      <div class="options-title">Тип жилья:</div>
-				  <label>
-				    <input type="checkbox" name="hotel" checked><i class="check-on"></i>Гостиница
-				  </label><br>
-				  <label>
-				    <input type="checkbox" name="motel" checked><i class="check-on"></i>Мотель
-				  </label><br>
-				  <label>
-				    <input type="checkbox" name="apartment" checked><i class="check-on"></i>Апартаменты
-				  </label>
-			  </div>
-			  
-			  <div class="filter">
-			     <div class="options-title">Стоимость в сутки (p):</div>
-				 <div class="booking">
-			       <div class="from">
-			         <span>От</span><input type="number" name="price" value="0">
-				   </div>
-				   <div class="before">
-				     <span>До</span><input type="number" name="price" value="3000"><br>
-				   </div>
-				 </div>
-				<div class="range">
-			      <div class="scale">
-			        <div class="bar"></div>
-			      </div>
-			      <div class="toggle min-toggle"></div>
-			      <div class="toggle max-toggle"></div>
-                </div>				
-				<input type="submit" name="showresult" value="Показать">
-			 </div>
-			</form>
+            <form class="options-form" action="/echo" method="post">
+                <div class="options-set left-aligned">
+                    <div class="options-title">Инфраструктура:</div>
+                    <ul>
+                        <li> 
+                            <label>
+                            <input type="checkbox" name="pool" checked><i class="icon-checkbox icon-check-on"></i>Бассейн
+                            </label>
+                        </li>
+                        <li>
+                            <label>
+                            <input type="checkbox" name="park"><i class="icon-checkbox icon-check-off"></i>Парковка
+                            </label>
+                        </li>
+                        <li>
+                            <label>
+                            <input type="checkbox" name="wifi"> <i class="icon-checkbox icon-check-off"></i>Wi-fi
+                            </label>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="options-set left-aligned">
+                <div class="options-title">Тип жилья:</div>
+                    <ul>
+                        <li>
+                            <label>
+                            <input type="checkbox" name="hotel" checked><i class="icon-checkbox icon-check-on"></i>Гостиница
+                            </label>
+                        </li>
+                        <li>
+                            <label>
+                            <input type="checkbox" name="motel" checked><i class="icon-checkbox icon-check-on"></i>Мотель
+                            </label>
+                        </li>
+                        <li>
+                            <label>
+                            <input type="checkbox" name="apartment" checked><i class=" icon-checkbox icon-check-on"></i>Апартаменты
+                            </label>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="filter-wrapper right-aligned">
+                
+                    <div class="options-title">Стоимость в сутки (p):</div>
+                    
+                    <div class="filter">
+                            <div class="booking">
+                                <div class="price">
+                                    <span>От</span>
+                                    <input type="number" name="price" value="0" min="0" max="3000">
+                                </div>
+                                <div class="price">
+                                    <span>До</span>
+                                    <input type="number" name="price" value="3000" min="0" max="3000">
+                                </div>
+                            </div>
+                            
+                            <div class="range">
+                                    <div class="scale">
+                                        <div class="bar"></div>
+                                    </div>
+                                    <div class="toggle min-toggle"></div>
+                                    <div class="toggle max-toggle"></div>
+                            </div>				
+                    </div>
+                    <input type="submit" name="showresult" value="Показать"/>
+                </div>
+            </form>
 		</div>
 		
-	    <div class="find">
+	    <div class="find clearfix">
 		
-			<p class="find-result">Найдено: <span>3</span></p>
+			<p class="find-result left-level">Найдено: <span>3</span></p>
 		
-			<p class="sort">Сортировка:</p>
+			<div class="sort left-level middle">
+              <p>Сортировка:</p>
+            
 			<ul>
-				<li><a class="active" href="#0">По цене</a></li>
+				<li class="active">По цене</li>
 				<li><a href="#0">По типу</a></li>
 				<li ><a href="#0">По рейтингу</a></li>
 			</ul>
-			<div class="icon-triangle">
+            </div>
+            <div class="icon-triangle">
 				<i class="icon-up-dir"></i>
-				<i class="icon-down-dir"></i>
+				<a href="#0"><i class="icon-down-dir"></i></a>
 			</div>
 		</div>
 		
 		    <article class="selection clearfix">
-			    <div class="hotel-image">
+			    <div class="hotel-image left-level">
 				  <img src="images/amara.jpg" width="135" height="90" title="AMARA RESORT&SPA" alt="Изображение отеля AMARA RESORT&SPA">
 				</div>
-				<div class="hotel-description">
+				<div class="hotel-description left-level middle">
 				  <h3 class="title">Amara Resort&amp;SPA</h3>
 				  <div class="hotel-type">
 				    <p class="type">Гостиница</p>
@@ -103,16 +135,16 @@
 					<i class="icon-star"></i>
 					<i class="icon-star"></i>
 				  </div>
-				  <div class="rating-value">Рейтинг: 8,5</div>
+				  <div class="rating-value"><span>Рейтинг: 8,5</span></div>
 				</div>
 			</article>
 			
 			<article class="selection clearfix">
-			    <div class="hotel-image">
+			    <div class="hotel-image left-level">
 			 	  <img src="images/desert.jpg" width="135" height="90" title="DESERT QUAIL INN" alt="Изображение отеля DESERT QUAIL INN">
 				</div>
 
-				<div class="hotel-description">
+				<div class="hotel-description left-level middle">
 				  <h3 class="title">Desert Quail Inn</h3>
 				  <div class="hotel-type">
 				    <p class="type">Мотель</p>
@@ -132,10 +164,10 @@
 			</article>
 			
 			<article class="selection clearfix">
-			    <div class="hotel-image">
+			    <div class="hotel-image left-level">
 				  <img src="images/villas.jpg" width="135" height="90" title="VILLAS AT POCO DIABLO" alt="Изображение отеля VILLAS AT POCO DIABLO">
 				</div>
-				<div class="hotel-description">
+				<div class="hotel-description left-level middle">
 				  <h3 class="title">Villas at Poco Diablo</h3>
 				  <div class="hotel-type">
 				    <p class="type">Апартамент</p>
@@ -157,7 +189,7 @@
 			</article>
 	</main>
     <footer class="main-footer clearfix">
-
+	<div class="footer-content">
 	    <div class="footer-contacts col4 clm-view">
 	      <p>#visitsedona</p>
 	    </div>
@@ -174,7 +206,7 @@
           <img src="images/logo_htmlacademy.png" width="113" height="39" title="html academy.ru" alt="html academy.ru">
       	  </a>
         </div>
-
+     </div>
 	</footer>
   </div>
   </body>

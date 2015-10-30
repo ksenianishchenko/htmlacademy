@@ -10,10 +10,17 @@
   <div class="container">
     <header class="main-header">
 	   <nav class="main-nav clearfix">
+        <ul>
 		  <li class="left"><a href="#0">Информация</a></li>
 		  <li class="left"><a href="#0">Фото и видео</a></li>
-		  <li class="right"><a href="sedona-hotels.html">Гостиницы</a></li>
+		  <li >
+		    <a class="logo" href="#0">
+			  <img src="images/logo.png" width="138" height="70" title="Логотип City Sedona" alt="Логотип City Sedona">
+		    </a>
+		  </li>
 		  <li class="right"><a href="#0">Карта штата</a></li>
+		  <li class="right"><a href="sedona-hotels.html">Гостиницы</a></li>
+        </ul>
 	   </nav>
 	</header>
 	
@@ -32,9 +39,9 @@
  
 		<div class="row reason-image">
 		  <div class="col4 blue">
-		  	<div class="reason-title">Настоящий<br>городок</div>
+		  	<div class="reason-title">Настоящий городок</div>
 			<p class="number">№1</p>
-			<p>Седона - не аттракцион для туристов,<br>там течет своя жизнь</p>
+			<p>Седона - не аттракцион для туристов, там течет своя жизнь</p>
 	  	  </div>
 		  <div class="col8 box-image">
 		  	<img src="images/image01.jpg" width="800" height="400" title="Hotel Foto" alt="Hotel Foto">
@@ -45,19 +52,19 @@
 		  <div class="col4 info">
 			  <div class="icon house"></div>
 			  <div class="inform-title">Жилье</div>
-			  <p>Рекомендуем пожить в настоящем<br>мотеле, все как в кино!</p>
+			  <p>Рекомендуем пожить в настоящем мотеле,  все как в кино!</p>
 		  </div>
 		  
 		  <div class="col4 info">
 		      <div class="icon food"></div>
 		      <div class="inform-title">Еда</div>
-		      <p>Всегда заказывайте фирменнтый бургер,<br> вы не разочаруетесь!</p>
+		      <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
 		  </div>
 		  
 		  <div class="col4 info">
               <div class="icon souvenirs"></div>
 		      <div class="inform-title">Сувениры</div>
-		      <p>Не только китайского,<br>но и местного производства</p>
+		      <p>Не только китайского, но и местного производства</p>
 		  </div>			  
 		</div>
 			
@@ -66,30 +73,30 @@
 			    <img src="images/image02.jpg" width="800" height="400" title="Сanyon Foto" alt="Сanyon Foto">
 			  </div>
 			  <div class="col4 blue">
-			    <div class="reason-title">Там есть<br>мост дьявола</div>
+			    <div class="reason-title">Там есть мост дьявола</div>
 			    <p class="number">№2</p>
-			    <p>Да, по нему можно пройти!<br>Если конечно вы осмелитесь</p>
+			    <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
 			  </div>
 		</div>
 		
 		<div class="row reason-bottom">
 			
 			  <div class="col4 gray">
-			    <div class="reason-title">Небольшая<br> площадь</div>
+			    <div class="reason-title">Небольшая  площадь</div>
 			    <p class="number">№3</p>
-			    <p>Все достопримеча-<br>тельности находятся очень близко</p>
+			    <p>Все достопримеча-тельности находятся очень близко</p>
 			  </div>
 			  
 			  <div class="col4 gray">
-			    <div class="reason-title">Красивая<br> дорога</div>
+			    <div class="reason-title">Красивая дорога</div>
 			    <p class="number">№4</p>
-			    <p>Ехать в Седону из Лас-Вегаса совсем<br>не скучно!</p>
+			    <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
 			  </div>
 			  
 			  <div class="col4 gray">
-			    <div class="reason-title">Мало<br>туристов</div>
+			    <div class="reason-title">Мало туристов</div>
 			    <p class="number">№5</p>
-			    <p>Большинство едет в Гранд Каньон и<br>толпится там</p>
+			    <p>Большинство едет в Гранд Каньон и толпится там</p>
 			  </div>
 			  
 		</div>
@@ -101,47 +108,48 @@
 		    <p class="small">Укажите предполагаемую дату поездки,<br>
 		     и мы покажем вам лучшие предложения гостиниц в Седоне</p>
 		  </div> 
-		  
+		 <div class="search"> 
 		   <div class="form-search-hotel">
 		     <a href="#0">Поиск гостиницы в Седоне</a>
 		   </div>
 		  
 		   <form class="form-search" action="/echo" method="post">
 		      <div class="date-move">
-			    <label>
-				  <span class="date-move-out">Дата заезда:</span> <input type="date" name="date" value="24 апреля 2014">
-				</label>
-				<label>
-				  <span class="date-move-out">Дата выезда:</span> <input type="date" name="date" value="4 июля 2014">
-				</label>
+			   <div class="date-move-in">
+			     <label>
+				   <span>Дата заезда:</span> <input type="date" name="date" value="24 апреля 2014">
+				 </label>
+			   </div>
+			   <div class="date-move-out">
+				 <label>
+				   <span>Дата выезда:</span> <input type="date" name="date" value="4 июля 2014">
+				 </label>
+			   </div>
 			  </div>
 			  <div class="people-amount">
 			    <div class="adult">
 				  <label>
 				    <span>Взрослые: </span>
-				          <i class="minus"></i>
+				          <i class="icon-minus"></i>
 				          <input type="text" name="adult amount" value="2">
-						  <i class="plus"></i>
+						  <i class="icon-plus"></i>
 				  </label>
 				</div>
 				
 				<div class="child">
 				  <label>
 				    <span>Дети: </span>
-				          <i class="minus"></i>
+				          <i class="icon-minus"></i>
 				          <input type="text" name="children amount" value="0">
-						  <i class="plus"></i>
+						  <i class="icon-plus"></i>
 				  </label>
 				</div>
 			  </div>
 				<button type="submit" class="btn">Найти</button>
 			</form>
+		 </div>
 			
-		    <div class="map">
-			<div class="image-wrapper">
-		      <img src="images/map.jpg" width="1718" height="748" title="Map" alt="Map"/>
-			 </div>
-		    </div><!--задний фон карта-->
+		    <div class="map"></div><!--задний фон карта-->
 		  
 		</div>
 	</main>
@@ -158,7 +166,7 @@
           <a href="#0" class="social-icon icon-youtube"></a>
         </div>
 
-        <div class="footer-copyright col4">
+        <div class="footer-copyright col4">                                    
       	  <span>website By</span>
           <a href="https://htmlacademy.ru/"><img src="images/logo_htmlacademy.png" width="113" height="39" title="html academy.ru" alt="html academy.ru">
       	  </a>

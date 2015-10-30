@@ -49,7 +49,7 @@ main.container {
 }
 /*Хидер*/
 .main-header {
-  padding: 20px 20px;
+  
   background-color: #000000; 
 }
 .main-nav {
@@ -65,12 +65,24 @@ main.container {
   min-height: 20px;
   font-size: 16px;
   text-decoration: none;
+  padding: 20px 0;
 }
 .main-nav li {
   display: inline-block;
   vertical-align: center;
-  margin-right: 40px;
+  padding-right: 40px;
   font-size: 16px;
+  padding: 20px 0;
+}
+.main-nav a {
+  padding-right: 20px;
+  padding-left: 20px;
+}
+.main-nav li:hover {
+  background-color: #242424;
+}
+ .main-nav .push:hover {
+  background-color: #000000;
 }
 .push {
   position: relative;
@@ -79,11 +91,10 @@ main.container {
   content: '';
   background-color: #ffffff;
   position: absolute;
-  width: 56px;
   height: 4px;
-  right: 0;
-  left: 0;
-  bottom: -26px;
+  right: 20px;
+  left: 20px;
+  bottom: 0;
 }
 .main-header a {
   color: #ffffff;
