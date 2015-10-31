@@ -57,27 +57,30 @@
 	box-shadow: 0 0 10px 0 #e2e2e2; 
 	position: relative;
 }
+
 .clearfix:after, .row:after {
-    content: "";
+  content: "";
 	display: table;
 	clear: both;
 }
 
 .reason-title,.inform-title, .sub-header, .find-result, h3 {
-    font-weight: 700;
+  font-weight: 700;
 	font-size: 21px;
 }
 
 a {
-    text-decoration: none;
+  text-decoration: none;
 	color: #000000;
 }
+
 li {
     list-style: none;
 }
+
 ul {
-    margin: 0;
-	padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 /*Хидер*/
@@ -247,13 +250,14 @@ ul {
 }
 .form-search-hotel {
 	width: 565px;
-    display: inline-block;
+        display: inline-block;
 	background-color: #766357;
 	padding-top: 28px;
 	padding-bottom: 28px;
 	color: #ffffff;
 	font-weight: 700;
 	font-size: 21px;
+	text-decoration: none;
 }
 
 .form-search {
