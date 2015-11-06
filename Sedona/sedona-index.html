@@ -109,16 +109,16 @@
                 </div> 
                 
                 <div class="search"> 
-                    <form class="form-search" action="/echo" method="post">
+                    <form class="form-search" action="https://echo.htmlacademy.ru" method="post">
                         <div class="date-move">
                             <div class="date-move-in">
                                 <label>
-                                    <span>Дата заезда:</span> <input class="icon-calendar" type="text" name="date" value="24 апреля 2014"><i class="icon-calendar"></i>
+                                    <span>Дата заезда:</span> <input class="icon-calendar" type="text" name="dateIn" value="24 апреля 2014"><i class="icon-calendar"></i>
                                 </label>
                             </div>
                             <div class="date-move-out">
                                 <label>
-                                    <span>Дата выезда:</span> <input type="text" name="date" value="4 июля 2014"><i class="icon-calendar"></i>
+                                    <span>Дата выезда:</span> <input type="text" name="dateOut" value="4 июля 2014"><i class="icon-calendar"></i>
                                 </label>
                             </div>
                         </div>
@@ -171,11 +171,24 @@
     <script>
         var link = document.querySelector(".form-search-hotel");
         var popup = document.querySelector(".form-search");
+        var moveIn = popup.querySelector("[name=dateIn]");
+        var moveOut = popup.querySelector ("[name=dateOut]");
+        
         
         link.addEventListener("click", function(event) {
-        event.preventDefault();
-        popup.classList.toggle("hidden");
+            event.preventDefault();
+            popup.classList.toggle("show");
+            moveIn.focus();
         });
+        
+        popup.addEventListener("submit", function(event) {
+            if (!moveIn.value || !moveOut.value) 
+                {event.preventDefault();}
+            else {
+                localStorage.setItem("moveIn",moveIn.value);}
+        });
+        
+        
     </script>
 </body>
 </html>

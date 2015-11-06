@@ -326,10 +326,11 @@ ul {
     left: 0;
     right: 0;
     z-index: 2;
+    display: none;
 }
 
-.hidden {
-    display: none;
+.show {
+    display: block;
 }
 
 .form-search span {
