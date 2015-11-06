@@ -284,7 +284,8 @@ ul {
     -webkit-box-sizing:  border-box;
     box-sizing:  border-box;
     padding: 50px 55px; 
-    padding-bottom: 45px;
+    padding-bottom: 0;
+    min-height: 255px;
 }
 
 .notice-promo {
@@ -327,12 +328,108 @@ ul {
     right: 0;
     z-index: 2;
     display: none;
+    
 }
-
+.search {
+    position: relative;
+}
 .show {
+    animation: bounce 2s linear;
     display: block;
 }
+.show-error {
+    -webkit-animation: shake 0.6s;
+    animation: shake 0.6s;
+}
 
+@-webkit-keyframes bounce {
+  0% {
+    transform: translateY(-396px);
+    }
+    10% {
+    transform: translateY(-356px);
+    }
+    20% {
+    transform: translateY(-316px);
+    }
+    30% {
+    transform: translateY(-276px);
+    }
+    40% {
+    transform: translateY(-236px);
+    }
+    50% {
+    transform: translateY(-196px);
+    }
+    60% {
+    transform: translateY(-156px);
+    }
+    70% {
+    transform: translateY(-116px);
+    }
+    80% {
+    transform: translateY(-76px);
+    }
+    100% {
+    transform: translateY(0);
+    }
+}
+
+@keyframes bounce {
+    0% {
+    transform: translateY(-396px);
+    }
+    10% {
+    transform: translateY(-356px);
+    }
+    20% {
+    transform: translateY(-316px);
+    }
+    30% {
+    transform: translateY(-276px);
+    }
+    40% {
+    transform: translateY(-236px);
+    }
+    50% {
+    transform: translateY(-196px);
+    }
+    60% {
+    transform: translateY(-156px);
+    }
+    70% {
+    transform: translateY(-116px);
+    }
+    80% {
+    transform: translateY(-76px);
+    }
+    100% {
+    transform: translateY(0);
+    }
+}
+@keyframes shake {
+  0%, 100% {
+    transform: translateX(0);
+  }
+  10%, 30%, 50%, 70%, 90% {
+    transform: translateX(-10px);
+  }
+  20%, 40%, 60%, 80% {
+    transform: translateX(10px);
+  }
+}
+
+@-webkit-keyframes shake {
+  0%, 100% {
+    transform: translateX(0);
+  }
+  10%, 30%, 50%, 70%, 90% {
+    transform: translateX(-10px);
+  }
+  20%, 40%, 60%, 80% {
+    transform: translateX(10px);
+  }
+}
 .form-search span {
     font-weight: 700;
 }

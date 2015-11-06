@@ -183,11 +183,21 @@
         
         popup.addEventListener("submit", function(event) {
             if (!moveIn.value || !moveOut.value) 
-                {event.preventDefault();}
+                {event.preventDefault();
+                popup.classList.remove("show-error");
+                popup.offsetWidth = popup.offsetWidth;
+                popup.classList.add("show-error");}
             else {
                 localStorage.setItem("moveIn",moveIn.value);}
         });
         
+        window.addEventListener("keydown", function(event) {
+            if (event.keyCode === 27) {
+                if (popup.classList.contains("show")) {
+                    popup.classList.remove("show");
+                }
+            }
+        });
         
     </script>
 </body>
