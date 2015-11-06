@@ -328,6 +328,10 @@ ul {
     z-index: 2;
 }
 
+.hidden {
+    display: none;
+}
+
 .form-search span {
     font-weight: 700;
 }
