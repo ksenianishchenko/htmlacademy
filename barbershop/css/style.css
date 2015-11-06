@@ -61,11 +61,13 @@ main.container {
 
 .enter {
   float: right;
-  width: 60px;
+  width: 70px;
   min-height: 20px;
   font-size: 16px;
   text-decoration: none;
   padding: 20px 0;
+  padding-left: 25px;
+  background: url(../images/icon_login.png) no-repeat 0 50%;
 }
 .main-nav li {
   display: inline-block;
@@ -114,7 +116,21 @@ ul {
    display: inline-block;
    vertical-align: center;
    font-size: 14px;
-   margin-right: 40px;
+   padding-right: 40px;
+   position: relative;
+}
+.breadcrumbs li:after {
+   content: '';
+   width: 8px;
+   height: 8px;
+   background-color: #000000;
+   transform: rotate(-45deg);
+   position: absolute;
+   top: 6px;
+   right: 15px;
+}
+.breadcrumbs .active:after {
+   display: none;
 }
 .breadcrumbs .active {
    color: #aba9a7;
@@ -173,9 +189,29 @@ ul {
 .produce-company, .filter-item {
   margin-bottom: 15px;
 }
-
 .produce-company:last-child {
    margin-bottom: 40px;
+}
+
+input[type="checkbox"], input[type="radio"] {
+   display: none;
+}
+label {
+   padding-left: 43px;
+   padding-top: 5px;
+   padding-bottom: 5px;
+}
+input[type="checkbox"]+label {
+   background: url(../images/checkbox.png) no-repeat 0 30%;  
+}
+input[type="checkbox"]:checked+label {
+   background: url(../images/checkbox_checked.png) no-repeat 0 30%;  
+}
+input[type="radio"]+label {
+   background: url(../images/radio.png) no-repeat 0 30%;  
+}
+input[type="radio"]:checked+label {
+   background: url(../images/radio_checked.png) no-repeat 0 30%;  
 }
 input[type="submit"] {
    width: 110px;
@@ -186,6 +222,7 @@ input[type="submit"] {
    text-transform: uppercase;
    font-family: 'PT Sans Narrow';
    font-weight: bold;
+   margin-top: 50px;
 }
 .pagination {
    clear: both;
@@ -262,6 +299,20 @@ input[type="submit"] {
   margin-top: 60px;
   margin-bottom: 30px;
 }
+.kit-list li {
+   padding-left: 20px;
+   position: relative;
+}
+.kit-list li:before {
+   content: '';
+   width: 8px;
+   height: 8px;
+   background-color: #000000;
+   transform: rotate(-45deg);
+   position: absolute;
+   top: 8px;
+   left: 0;
+}
 /*Конец Контент Товар каталога*/
 /*Футер*/
 .main-footer {
@@ -296,6 +347,15 @@ input[type="submit"] {
 }
 .footer-social a:last-child {
   margin-right: 0;
+}
+.social-btn-vk {
+  background: url(../images/icon_vk.png) no-repeat 50% 50%;
+}
+.social-btn-fb {
+  background: url(../images/icon_fk.png) no-repeat 50% 50%;
+}
+.social-btn-inst {
+  background: url(../images/icon_foto.png) no-repeat 50% 50%;
 }
 .footer-copyright {
   float: right;
