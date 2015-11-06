@@ -168,5 +168,14 @@
             </div>
         </footer>
     </div>
+    <script>
+        var link = document.querySelector(".form-search-hotel");
+        var popup = document.querySelector(".form-search");
+        
+        link.addEventListener("click", function(event) {
+        event.preventDefault();
+        popup.classList.toggle("hidden");
+        });
+    </script>
 </body>
 </html>
