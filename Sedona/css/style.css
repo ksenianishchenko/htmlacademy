@@ -267,7 +267,7 @@ input:focus {
 }
 
 .food { 
-    background: url(../images/sprites.png) no-repeat 0 100%;
+    background: url(../images/sprites.png) no-repeat 7px 100%;
 }
 
 .souvenirs { 
