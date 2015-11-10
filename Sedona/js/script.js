@@ -11,7 +11,7 @@
             
             setTimeout(function() {
                 moveIn.focus();
-            }, 2000);
+            }, 300);
         });
 
 
