@@ -12,25 +12,23 @@
     font-family: 'PT Sans';
     font-weight: 700;
     font-style: normal;
-
-    src: url('../PTSans/PTS75F.ttf');
+    src: url('../font/PTSans/PTS75F.ttf');
 }
 
 @font-face {
     font-family: 'PT Sans';
     font-weight: 400;
     font-style: normal;
-
-    src: url('../PTSans/PTS55F.ttf');
+    src: url('../font/PTSans/PTS55F.ttf');
 }
 
 @font-face {
     font-family: 'symbols-sedona';
-    src: url('../symbols-sedona/font/symbols-sedona.eot?60737633');
-    src: url('../symbols-sedona/font/symbols-sedona.eot?60737633#iefix') format('embedded-opentype'),
-    url('../symbols-sedona/font/symbols-sedona.woff?60737633') format('woff'),
-    url('../symbols-sedona/font/symbols-sedona.ttf?60737633') format('truetype'),
-    url('../symbols-sedona/font/symbols-sedona.svg?60737633#symbols-sedona') format('svg');
+    src: url('../font/symbols-sedona/font/symbols-sedona.eot?60737633');
+    src: url('../font/symbols-sedona/font/symbols-sedona.eot?60737633#iefix') format('embedded-opentype'),
+    url('../font/symbols-sedona/font/symbols-sedona.woff?60737633') format('woff'),
+    url('../font/symbols-sedona/font/symbols-sedona.ttf?60737633') format('truetype'),
+    url('../font/symbols-sedona/font/symbols-sedona.svg?60737633#symbols-sedona') format('svg');
     font-weight: 400;
     font-style: normal;
 }
@@ -335,8 +333,8 @@ input:focus {
     position: relative;
 }
 .show {
-    -webkit-animation: bounce .6s linear;
-            animation: bounce .6s linear;
+    -webkit-animation: bounce .2s linear;
+            animation: bounce .2s linear;
     display: block;
 }
 .show-error {
