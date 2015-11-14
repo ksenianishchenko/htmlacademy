@@ -252,9 +252,9 @@ input:focus {
     content: '';
     width: 75px;
     height: 80px;
-    position: absolute;
-    top: 55px;
-    left: 40%;
+    display: block;
+    margin: 0 auto;
+    margin-top: 50px;
 }
 
 .house:before{
@@ -270,7 +270,7 @@ input:focus {
 }
 
 .inform-title {
-    margin-top: 165px;
+    margin-top: 30px;
     margin-bottom: 20px;
 }
 
